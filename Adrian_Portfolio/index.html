@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons-->
+    <script src="https://kit.fontawesome.com/175dbced17.js" crossorigin="anonymous"></script>
+
+    <!--FavIcon-->
+    <link rel="icon" href="img/aafo.png">
+
+    <title>Mi Portafolio - Adrián Ferrer</title>
+</head>
+<body>
+
+    <!--Header-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/flogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#about">Acerca de Mi</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Scientist</p>
+                <h1>Hola, soy <span>Adrián</span><br>Ferrer de México</h1>
+            </div>
+        </div>
+    </div>
+    <!--Header-->
+
+    <!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/fuser2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">Acerca de Mi</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolores necessitatibus illo ipsam aspernatur ipsa consequuntur veritatis, enim atque rem? Error pariatur delectus quaerat minus eos assumenda quibusdam expedita sed.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Habilidades</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiencia</p>
+                        <p class="tab-links" onclick="opentab('education')">Educación</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programación</span><br>Elaboración de programas en diversos lenguajes.</li>
+                            <li><span>Machine Learning</span><br>Aplicación de algoritmos de aprendizaje de máquina.</li>
+                            <li><span>Deep Learning</span><br>Aplicación de aprendizaje profundo.</li>
+                            <li><span>Análisis</span><br>Análisis estadísticos y matemáticos de resultados.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020 - 2022</span><br>Elaboración de proyectos de programación.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Actual</span><br>Intercambio en (Inserte nombre suizo).</li>
+                            <li><span>2020 - 2022</span><br>Sexto semestre de la carrera de Ciencia de Datos y Matemáticas, ITESM CEM.</li>
+                            <li><span>2019 - 2020</span><br>Primer semestre de la carrera de Ingeniería Mecatrónica, ITESM CEM.</li>
+                            <li><span>2016 - 2019</span><br>Bachillerato, Colegio Moderno Tepeyac.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--About-->
+
+    <!--Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">Mis Proyectos</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work-1.png">
+                    <div class="layer">
+                        <h3>Probabilidad de Muerte por COVID</h3>
+                        <p>Aplicación de una red neuronal multicapa para la predicción de la probabilidad de fallecimiento por COVID-19.</p>
+                        <a href="#"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="img/work-2.png">
+                    <div class="layer">
+                        <h3>Optimización de Rutas</h3>
+                        <p>Aplicación de algoritmos de optimización para mejorar las rutas de los envíos de la empresa Coppel.</p>
+                        <a href="#"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="img/work-3.png">
+                    <div class="layer">
+                        <h3>Aplicación de Firmado y Verificación</h3>
+                        <p>Aplicación de algoritmos y esquemas de encripción en una aplicación de escritorio para la Fundación Teletón.</p>
+                        <a href="#"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Ver Más</a>
+        </div>
+    </div>
+    <!--Portfolio-->
+
+    <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contáctame</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>aafo@example.com</p>
+                    <p><i class="fa-solid fa-phone-square-alt"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="files/my-cv.pdf" class="btn btn2" download>Descargar Currículum</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Nombre Completo" required>
+                        <input type="email" name="email" placeholder="Correo Electrónico" required>
+                        <textarea name="message" rows="6" placeholder="Mensaje"></textarea>
+                        <button type="submit" class="btn btn2">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <p>Made with <i class="fa-solid fa-heart"></i> by C.A. Designs</p>
+        </div>
+    </div>
+    <!--Contact-->
+
+    <!--About Script-->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link')
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab')
+            }
+
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+
+    </script>
+
+    <!--Responsive Menu-->
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    
+</body>
+</html>
